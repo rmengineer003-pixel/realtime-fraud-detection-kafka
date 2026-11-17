@@ -1,0 +1,23 @@
+[project]
+name = "fraud-stream"
+version = "0.1.0"
+description = "Kafka-based streaming fraud alert demo with stateful rules (synthetic data)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+kafka = ["kafka-python>=2.0.2"]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
