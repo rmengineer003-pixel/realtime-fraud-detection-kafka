@@ -1,1 +1,15 @@
-placeholder
+{
+  "transactions": 20000,
+  "alerts": 386,
+  "true_positives": 330,
+  "false_positives": 56,
+  "missed": 187,
+  "precision": 0.855,
+  "recall": 0.638,
+  "alerts_by_reason": {
+    "high_risk_merchant": 45,
+    "geo_jump": 54,
+    "velocity": 211,
+    "amount_outlier": 119
+  }
+}
